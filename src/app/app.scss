@@ -1,0 +1,139 @@
+ 
+ ion-title{
+    font-family: 'kufi' !important;
+
+ }
+
+ion-content,ion-item{
+      font-family: 'kufi' !important;
+      // background-color: #f5f5f5
+  
+
+}
+
+    // body, ion-item, ion-title, ul {
+      
+    //     }
+
+    a{
+        text-decoration: none;
+        color: #2699fb;
+        padding: 7px 10px;
+        border: 1px solid #2699fb;
+        border-radius: 30px;
+        margin: 5px;
+        display: block;
+        text-align: center;
+    }
+    
+
+        ion-toolbar{
+            background: transparent
+        }
+
+        .cal:first-child{
+            margin-top: 30px;
+        }
+    .btn{
+        font-family: 'kufi' !important;
+        text-align: right;
+        background: transparent;
+        color: #2b8cd6 ;
+        border-bottom: 1px solid #5da4d5;
+        // box-shadow: 0px 0px 3px 0px #4ab4ff;
+        font-size: 15px;
+        padding: 10px;
+        padding-right: 30px;
+        font-weight: bold
+
+
+        }
+
+        .btn:active{
+            background:#e8eaea ;
+        }
+
+.backIon{
+   // background-color: #f8f8f8;
+    background-position: center;
+  
+    background-size: cover;
+}
+
+.con-img{
+    position: absolute;
+    bottom: 7%;
+    right: 0; 
+    left: 0;
+    text-align: center;
+}
+
+.test{
+    width: 100%;
+    border-bottom: 1px solid #a3a3a3;
+    padding: 1px 0px 30px;
+    background-color: #2196F3
+}
+
+.backIon img{
+    width: 25vw;
+    height: 25vw;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+/////////////////////////////////////////
+
+
+p{
+    color: #107895;
+    font-size:17px
+}
+
+.main-ul > li  {
+    list-style-image: url('../../assets/imgs/listIcon/Untitled-2.png')
+}
+
+
+.main-ul li ul li  {
+    list-style-image: url('../../assets/imgs/listIcon/Untitled-1.png');
+    margin: 7px 0px 10px 0px;
+}
+
+body, ul {
+    font-family: 'kufi' !important;
+    }
+
+ul{
+    padding-right: 15px;
+    text-align: justify;
+    margin: 10px 0px 15px 0; 
+}
+
+.menus{
+display: inline-block !important;
+position: absolute;
+left: 0 ;
+ color: #fff
+}
+
+.night{
+   color: #2b8cd6;
+    background-color:  #f5f5f5
+}
+
+strong{
+    font-family: 'logoFont';
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+}
+
+.CodeName{
+    text-align: center
+}

@@ -1,0 +1,153 @@
+page-about {
+
+    .conn-back-img{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        background-image: url(../../assets/imgs/Listback/about.png);
+        background-position: bottom;
+        background-size: cover;
+        text-align: right;
+ 
+
+    }
+    .conn-back-img img{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        float: left;
+        margin: 37px 0 0px 50px;
+    }
+ 
+
+    .conn-back-img p {
+        margin: 0;
+        padding: 75px 50px 0 0;
+        color: #f5f5f5;
+        font-size: 16px;
+    }
+
+
+ 
+    .conn-btn-details{
+        width: 100%;
+        height: 100px;
+        background-color: #f5f5f5;
+        padding: 0;
+        margin: 0; 
+        overflow: hidden;
+    }
+    .conn-btn-details .btninfo{
+        width: 49%;
+        color: black;
+        margin: 0;
+        padding: 40px 0;
+        background-color:#2699fb;
+        font-size: 17px;
+        color: #f5f5f5;
+        height: 100%;
+  
+    }
+
+
+    .conn-btn-details .btninfo:last-child {
+        background-color:  #f5f5f5;
+         float: right;
+         color: #222
+    }
+
+    .conn-btn-details button img{
+        width: 30px;
+        height: 20px;
+        display: inline-block;
+    }
+    
+    .conn-personal-info{
+        width: 100%;
+  
+        background: #2699fb;
+
+    }
+
+    .conn-info{
+        height: 100%;
+        text-align: center;
+        padding: 0;
+        color: #fff;
+      padding-top: 35px;
+    }
+
+    .conn-info p{
+        color: #fff;
+    }
+
+    .conn-info img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin-top: 17px;
+        display: inline;
+    }
+
+.conn-about-mob{
+    direction: rtl;
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    padding: 0;
+    overflow: hidden;
+ 
+}
+
+.conn-about-mob div{
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0 10px 0;
+    font-family: 'logoFont';
+    color: #222;
+}
+
+p{
+    margin: 0;
+    padding: 0 10px;
+    font-size: 4vw;
+    font-weight: 100;
+  color: #222;
+}
+
+.conn-about-mob p span{
+    font-family: 'logoFont';
+    color: #797979
+}
+
+.contact-Us{
+    text-decoration: none;
+ 
+    padding: 7px 10px;
+    border: 2px solid #2699fb;
+    border-radius: 30px;
+    margin: 5px;
+    display: block;
+    text-align: center;
+}
+
+.contact-me  {
+    display: inline-block; 
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+}
+.contact-me  ion-icon {
+    font-size: 20px;
+    padding: 0 4px;
+    border-radius: 3px;
+    color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+}
+ 
+
+}
+
+

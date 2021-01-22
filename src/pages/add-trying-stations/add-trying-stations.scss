@@ -1,0 +1,82 @@
+page-add-trying-stations {
+    ion-content{
+
+        background-color: #fff !important;
+    }
+
+    
+    .login-form{
+        text-align: right;
+   }
+   .input{
+       width: 100%;
+      
+       border: none;
+       border-bottom: 1px solid #2699fb;
+       font-size: 17px;
+    text-align: right
+    }
+
+   .lable{
+       display: block;
+       margin-top: 10px;
+     
+       color: #7d7d7d;
+   }
+   
+
+   .logo{
+       width: 100px;
+       height: 100px;
+       display:block;
+       margin: 0 auto;
+       border-radius: 100%;
+   }
+
+   .login{
+       display: block;
+       margin: 10px auto;
+       width: 70%;
+       padding: 12px;
+       border-radius: 26px;
+       background-color: #2699fb;
+       color: #fff;
+   }
+ 
+   .log-soctial{
+       display: inline-block;
+       width: 50px;
+       height: 50px;
+       margin: 5px;
+   }
+
+   .con-img-log{
+       text-align: center
+   }
+
+   p{
+       text-align: center;
+       margin-top: 50px;
+   }
+ 
+
+.con-texterea{
+    position: relative;
+}
+ 
+.goto{
+    display: block;
+margin: 0 auto;
+padding: 10px 20px;
+color: #2699fb;
+background: none;
+border: 1px solid #2699fb;
+border-radius: 3px;
+}
+.goto:active{
+ 
+background-color:#2699fb ; 
+color: #fff
+}
+
+}

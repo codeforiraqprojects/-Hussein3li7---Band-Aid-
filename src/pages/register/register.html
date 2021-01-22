@@ -1,0 +1,35 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header dir="rtl">
+  <ion-navbar color="orange">
+    <button ion-button menuToggle class="menus">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> انشاء حساب </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    
+  <div class="register-form">
+      
+    <img class="logo" src="../../assets/imgs/Listback/CodeLogo.jpg" alt="">
+<p>انشاء حساب</p>
+    <label class="lable" for="regname">الاسم</label>
+    <input [(ngModel)]="registerInfo.regname" class="input" type="text" name="" id="regname">
+    <label class="lable" for="regemal">الايميل</label>
+    <input [(ngModel)]="registerInfo.regemail" class="input" type="email" name="" id="regemal">
+    <label class="lable" for="regass"> كلمة السر</label>
+    <input [(ngModel)]="registerInfo.regpass" class="input" type="password" name="" id="regass">   
+      <button class="login" (click)="register()" >انشاء حساب</button>
+  
+</div>  
+
+
+</ion-content>

@@ -1,0 +1,38 @@
+
+<ion-header dir="rtl">
+  <ion-navbar color="orange">
+    <button ion-button menuToggle class="menus">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> اضافة اماكن تدريب </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+  <div class="login-form"  *ngIf="logedinFirebase; else notLogin ">
+ 
+    <label class="lable" for="nameState"  >اسم المنظمة</label>
+    <input class="input" type="text"  id="nameState" [(ngModel)]="getDataFromUser.orginaztionsName">
+
+    <div class="con-texterea" > 
+
+    <label class="lable" for="textFeed"> رقم هاتف المنظمة</label> 
+    <input name="feedBack" min="11" type="tel" id="textFeed"class="input"  [(ngModel)]="getDataFromUser.orginaztionsNumber"  >
+ 
+    </div>
+ 
+      <button class="login" (click)="SetNewState()"  [disabled]="disableButton"  > اضافة</button>
+    
+  </div>
+  
+  <ng-template #notLogin > 
+ 
+    <p>يرجى تسجيل الدخول</p>
+  
+  
+    <button (click)="goToLogin()" class="goto" >login</button>
+    
+  </ng-template>
+
+</ion-content>

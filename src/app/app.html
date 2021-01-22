@@ -1,0 +1,45 @@
+<ion-menu [content]="content">
+  <ion-header>
+
+    <!-- <ion-toolbar>
+      <ion-title align="center" >الرئيسية</ion-title>
+    </ion-toolbar> -->
+  </ion-header>
+
+  <ion-content class="backIon">
+    <div class="test">
+   <img src="../assets/imgs/Listback/CodeLogo.jpg" alt=""> 
+  </div>
+    <ion-list class="cal">
+ 
+      <div *ngIf="AuthState" class="btn" menuClose (click)="AdminPage()" > الادارة <ion-icon name="people"></ion-icon> </div>
+
+      <div class="btn" menuClose *ngFor="let p of pages"(click)="openPage(p)" >
+       
+        <div  *ngIf="p.show" >
+          
+              <span > {{p.title}}</span>
+       
+            <ion-icon [name]="p.icon"></ion-icon>
+        </div>
+ 
+      </div>
+ 
+    </ion-list>
+
+    <div class="con-img">
+
+        <!-- <ion-item class="night"> 
+            <ion-label>الوضع الليلي</ion-label>
+            <ion-toggle  [(ngModel)]="night" (ionChange)="ok()" ></ion-toggle>
+          </ion-item> -->
+ 
+    </div>
+
+   <p class="CodeName"> <strong >Code For Iraq</strong></p>  
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

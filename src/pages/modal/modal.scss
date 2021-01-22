@@ -1,0 +1,43 @@
+page-modal {
+
+.con-EditForm{
+    display: flex;
+    justify-content: center;
+    align-items: center,
+    
+}
+
+   .con-EditForm .DeleteButton{
+        background: #F44336;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 22px 40px -6px #f44336;
+        margin: 0 5px ;
+        transition: .2s all ease-in-out
+    }
+
+   .con-EditForm .EditButton{
+        background: #3347e8;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 22px 40px -6px #3347e8;
+        margin: 0 5px ;
+        transition: .2s all ease-in-out
+    }
+
+    .con-EditForm .DeleteButton:active{
+        box-shadow: 0px 6px 18px -7px #f44336;
+        
+    }
+    .con-EditForm .EditButton:active{
+        box-shadow: 0px 6px 18px -7px #3347e8;
+      
+    }
+
+}

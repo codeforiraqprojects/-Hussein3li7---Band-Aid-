@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar color="orange">
+    <button ion-button menuToggle class="btn-menus">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>الادارة</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="con-btn">
+
+    <button (click)="ShowState('NewState')"> عرض الحالات الجديدة <small> {{NewStateNum}} </small> </button>
+    <button (click)="ShowState('NewStations')"> عرض المراكز الجديدة <small> {{NewStationsNum}} </small> </button>
+
+  </div>
+  <br>
+  <div class="container">
+    <div [ngSwitch]="defulatView">
+      <div *ngSwitchCase="'NewState'">
+        <p>حالات جديدة</p>
+
+        <div class="con-data" *ngFor="let state of newStateSmallData; let i=index">
+          <ion-list>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="../../assets/imgs/hospital2.svg">
+              </ion-avatar>
+              <div class="con-detailes">
+
+                <h2> {{state[1]['stateName'] }} </h2>
+                <h3> {{state[1]['explainState'] }} </h3>
+                <h2 id="Url" (click)="CopyUrl() " > {{state[1]['Url']}} </h2>
+                <h4> {{state[1]['publisherName'] }}</h4>
+              </div>
+              <div class="con-button">
+
+                <button
+                  (click)="showConfirmAddState(state[1]['stateName'] ,state[1]['explainState'],state[1]['symptoms'] , state[1]['publisherName'],state[0],i )">
+                  عرض </button>
+              </div>
+            </ion-item>
+          </ion-list>
+
+        </div>
+
+      </div>
+
+      <div *ngSwitchCase="'NewStations'">
+
+        <p>مراكز جديدة</p>
+
+        <div class="con-data" *ngFor="let state of newStationsSmallData">
+          <ion-list>
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="../../assets/imgs/hospital2.svg">
+              </ion-avatar>
+              <div class="con-detailes">
+                <h2> {{state[1]['orginaztionsName'] }} </h2>
+                <h3>{{state[1]['orginaztionsNumber'] }}</h3>
+                <h4>{{state[1]['publisherName'] }}</h4>
+              </div>
+              <div class="con-button">
+                <button
+                  (click)="showConfirmAddStations(state[1]['orginaztionsName']  ,state[1]['orginaztionsNumber'],state[1]['publisherName'] ,state[0] ,state )">
+                  عرض </button>
+              </div>
+            </ion-item>
+          </ion-list>
+
+          <!-- <p> orginaztions Name: {{state[1]['orginaztionsName'] }} </p>
+          <p> orginaztions Number: {{state[1]['orginaztionsNumber'] }} </p>
+          <p> publisher Name: {{state[1]['publisherName'] }} </p> -->
+
+        </div>
+      </div>
+
+      <div *ngSwitchDefault>عذرا حصل خطا ما يرجى اعادة تشغيل البرنامج</div>
+    </div>
+  </div>
+
+</ion-content>

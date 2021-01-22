@@ -1,0 +1,151 @@
+page-home {
+
+    @keyframes animate {
+
+        0%,
+        100% {
+            height: 20px;
+            transform: translateY(0);
+            background: #4cd137;
+        }
+    
+        25% {
+            height: 60px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            background: #fbc531;
+        }
+    
+        50% {
+            height: 60px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background: #9c88ff;
+        }
+    }
+
+
+    ion-content{
+                background-image: url('../../assets/imgs/Listback/back.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center
+    }
+ 
+
+.con-call-list{
+    width: 100%;
+    background-color: #f3f5f652;
+}
+
+.call-list{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px solid #2699fb;
+    text-align: right;
+}
+
+.con-call-list .call-list :last-child{
+    float: right;
+}
+
+img{
+    width: 50px;
+    float: left;
+    display: inline-block;
+}
+
+h4{
+    margin: 0px 0px 0px 20px;
+    display: inline-block;
+    font-size: 15px;
+    padding-right: 20px;
+}
+h6{
+    margin: 0;
+    padding: 0;
+    color: #717171;
+    padding-right: 20px;
+}
+
+p
+{
+    color: #fff;
+    text-align: center;
+    margin: 150px 25px 30px;
+    font-size: 15px;
+    background: #2699fb;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.callll:active{
+    border: 1px solid #2699fb;
+    border-radius: 100%;
+    padding: 1px;
+    transition: .2s ease-in-out
+}
+ 
+
+.con-info-call{
+    width: 65%;  
+    display: inline-block;
+    overflow: hidden;
+}
+
+.con-loading {
+    padding-top: 50px;
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.con-loading span {
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background: #2f3640;
+    animation: animate 1.5s infinite ease-in-out;
+}
+
+.con-loading :nth-child(1) {
+    animation-delay: .3s;
+}
+
+.con-loading :nth-child(2) {
+    animation-delay: .5s;
+}
+
+.con-loading :nth-child(3) {
+    animation-delay: .7s;
+}
+
+.con-loading :nth-child(4) {
+    animation-delay: .9s;
+}
+
+.con-loading :nth-child(5) {
+    animation-delay: 1.1s;
+}
+
+.con-loading :nth-child(6) {
+    animation-delay: 1.3s;
+}
+
+.con-loading :nth-child(7) {
+    animation-delay: 1.6s;
+}
+
+.con-loading :nth-child(8) {
+    animation-delay: 1.9s;
+}
+
+h2{
+    font-size: 15px;
+    margin: 0 0 15px 0;
+}
+
+}

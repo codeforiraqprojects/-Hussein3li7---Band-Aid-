@@ -1,0 +1,38 @@
+ 
+<ion-header>
+  <ion-navbar color="orange">
+      <ion-buttons end >
+          <button ion-button (click)="CloseModal()"> <b>  Close <ion-icon name="arrow-back"></ion-icon> </b> </button>  
+          </ion-buttons>
+    <ion-title> {{StateDataObj.Title}} </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="login-form">
+  <label class="lable" for="nameState"  >اسم الحالة</label>
+  <input class="input" type="text"  id="nameState" [(ngModel)]="getDataFromUser.StateName">
+
+  <div class="con-texterea" > 
+
+  <label class="lable" for="textSymptoms"> الاعراض </label>
+  <ion-icon class="clear " ios="ios-close-circle" md="md-close-circle" (click)="clearsymptoms()" ></ion-icon> 
+  <textarea name="feedBack"  id="textSymptoms"class="feed" placeholder=" الاعراض" [(ngModel)]="getDataFromUser.symptoms"  ></textarea>
+
+  </div>
+  
+  <div class="con-texterea" > 
+
+  <label class="lable" for="textFeed"> شرح عن الحالة </label>
+  <ion-icon class="clear " ios="ios-close-circle" md="md-close-circle" (click)="clear()" ></ion-icon> 
+  <textarea name="feedBack"  id="textFeed"class="feed" placeholder=" شرح عن الحالة" [(ngModel)]="getDataFromUser.ExplainState"  ></textarea>
+
+  </div>
+</div>
+    <button class="login" (click)="SaveUpdateinfo()"  > حفظ التعديلات</button>
+  
+ <!-- [disabled]="disableButton"  -->
+
+</ion-content>

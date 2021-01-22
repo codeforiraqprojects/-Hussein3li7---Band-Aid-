@@ -1,0 +1,55 @@
+ 
+
+ 
+<ion-header>
+    <ion-navbar color="orange">
+        <ion-buttons end >
+            <button ion-button (click)="CloseModal()"> <b>  Close <ion-icon name="arrow-back"></ion-icon> </b> </button>  
+            </ion-buttons>
+      <ion-title> {{StateDataObj.Title}} </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+<ion-content padding>
+
+  <div class="con-EditForm" *ngIf="showEditeButton" >
+
+  <button class="EditButton" (click)="openModal()" >  تعديل  <ion-icon name="create"></ion-icon>  </button>
+  <button class="DeleteButton" (click)="DeleteState()" >  <ion-icon name="trash"></ion-icon> حذف</button>
+  </div>
+  
+  
+
+    <ul class="main-ul" dir="rtl">
+
+
+        <li>
+  
+            <ul> <p>{{StateDataObj.Title}} </p>
+            
+              <p>الاعراض</p>
+
+              <li> {{StateDataObj.symptoms}} </li>
+
+            </ul>
+ 
+            </li>
+
+        <li>
+  
+            <ul> <p>{{StateDataObj.Title}} </p>
+            
+              <li> {{StateDataObj.ExplainState}} </li>
+
+            </ul>
+
+
+
+            </li>
+        
+
+
+    </ul>
+
+
+</ion-content>

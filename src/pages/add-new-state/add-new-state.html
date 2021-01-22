@@ -1,0 +1,51 @@
+
+<ion-header dir="rtl">
+  <ion-navbar color="orange">
+    <button ion-button menuToggle class="menus">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> اضافة حالة جديدة </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+
+  <div class="login-form"  *ngIf="logedinFirebase; else notLogin ">
+ 
+    <label class="lable" for="nameState"  >اسم الحالة</label>
+    <input class="input" type="text"  id="nameState" [(ngModel)]="getDataFromUser.stateName">
+    
+    <label class="lable" for="URL"  > مصدر العلاج</label>
+    <input class="input" type="text" placeholder="المصدر" id="URL" [(ngModel)]="getDataFromUser.Url">
+
+    <div class="con-texterea" > 
+
+    <label class="lable" for="textFeed"> الاعراض </label>
+    <ion-icon class="clear " ios="ios-close-circle" md="md-close-circle" (click)="clearsymptoms()" ></ion-icon> 
+    <textarea name="feedBack"  id="textSymptoms"class="feed" placeholder=" الاعراض" [(ngModel)]="getDataFromUser.symptoms"  ></textarea>
+ 
+    </div>
+  
+    <div class="con-texterea" > 
+
+    <label class="lable" for="textFeed"> الاسعافات الاولية </label>
+    <ion-icon class="clear " ios="ios-close-circle" md="md-close-circle" (click)="clear()" ></ion-icon> 
+    <textarea name="feedBack"  id="textFeed"class="feed" placeholder=" شرح عن الحالة" [(ngModel)]="getDataFromUser.explainState"  ></textarea>
+ 
+    </div>
+ 
+      <button class="login" (click)="SetNewState()"  [disabled]="disableButton"  > اضافة</button>
+    
+  </div>
+  
+
+  <ng-template #notLogin > 
+ 
+    <p>يرجى تسجيل الدخول</p>
+  
+  
+    <button (click)="goToLogin()" class="goto" >login</button>
+    
+  </ng-template>
+
+</ion-content>

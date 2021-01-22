@@ -1,0 +1,42 @@
+ 
+<ion-header>
+
+  <ion-navbar color="orange">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      الملاحظات
+    </ion-title>
+
+    <ion-buttons   end>
+      <button *ngIf="logedinFirebase" ion-button icon-only (click)="logut()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+
+  <div *ngIf="logedinFirebase; else notLogin " >
+
+  <textarea name="feedBack" [(ngModel)]="feedBackObj.feedBack" id="textFeed"class="feed" placeholder="رأيك..." ></textarea>
+
+<button class="sendBtn" (click)="getFeedBack()"> ارسال <ion-icon name="send"></ion-icon>  </button>
+
+</div>
+
+<ng-template #notLogin > 
+ 
+  <p>يرجى تسجيل الدخول</p>
+
+
+  <button (click)="goToLogin()" class="goto" >login</button>
+  
+</ng-template>
+
+
+</ion-content>
